@@ -4,13 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                url: 'https://github.com/NitinSainiQA/May_2026_Playwright_Framework.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 bat 'npm install'
